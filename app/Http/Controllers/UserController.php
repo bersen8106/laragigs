@@ -30,6 +30,7 @@ class UserController extends Controller
         // Login
         auth()->login($user);
 
+
         return redirect('/')->with('message', 'User created and logged in ');
     }
 
